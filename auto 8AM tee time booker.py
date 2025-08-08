@@ -29,8 +29,8 @@ try:
 
     RETURN = WebDriverWait(driver, 5).until(expected_conditions.presence_of_element_located((By.ID, 'p_lt_PageContent_pageplaceholder_p_lt_zoneLeft_CHOLogin_LoginControl_ctl00_Login1_LoginButton')))
 
-    USERNAME.send_keys('')
-    PASSWORD.send_keys('')
+    USERNAME.send_keys('#######')
+    PASSWORD.send_keys('#######')
     RETURN.click()
 except NoSuchElementException:
     driver.quit()
@@ -151,3 +151,4 @@ except NoSuchElementException or TimeoutException:
 
 
 time.sleep(20)
+
