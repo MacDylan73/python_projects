@@ -1,3 +1,6 @@
+# This script has not been updated to function on the updated site.  Some site and other personal/login info removed for
+# privacy and security
+
 # imports
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
@@ -168,3 +171,4 @@ except NoSuchElementException or TimeoutException:
 close = input("Exit program? 'y' or 'n'?")
 if close == 'y' or 'Y':
     driver.quit()
+
